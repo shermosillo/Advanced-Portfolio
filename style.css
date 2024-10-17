@@ -11,6 +11,52 @@ li {
     list-style-type: none;
 }
 
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+section {
+    background-color: rgb(245, 245, 245);
+}
+
+.header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.title {
+    font-size: 120px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.red {
+    color: rgb(167, 16, 16)
+}
+
+.header__para {
+    font-size: 24px;
+    line-height: 2;
+    max-width: 450px;
+}
+
+/*
+
+LANDING PAGE
+
+*/
+
+#landing-page {
+    height: 100vh;
+}
+
 /*
 
 NAVIGATION
@@ -46,4 +92,8 @@ nav {
     color: #242424;
     font-weight: 700;
     text-decoration: none;
+}
+
+.fa-circle-half-stroke {
+    font-size: 20px;
 }
