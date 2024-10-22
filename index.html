@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sam Hermosillo</title>
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/1e398523bc.js"
@@ -39,7 +39,7 @@
               >Contacts</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link click">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -52,14 +52,87 @@
         <div class="header__content">
           <h1 class="title">Hey</h1>
           <h1 class="title red">I'm Sam.</h1>
-          <para class="header__para"
-            >I'm a <b class="red">Frontend Software Engineer</b>with a strong
+          <p class="header__para"></p>
+            I'm a <b class="red">Frontend Software Engineer</b> with a strong
             passion for bulding web application with great user experiences.
-            <br>
+            <br />
             Here's a bit more <b class="red click">about me</b>.
-          </para>
+          </p>
+          <div class="social__list">
+            <a href=""></a>
+            <a
+              href="https://www.linkedin.com/in/sam-hermosillo-759b7135/"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/shermosillo"
+              target="_blank"
+              class="social__link click"
+            >
+              <i class="fa-brands fa-github"></i
+            ></a>
+            <a href="" class="social__link click">
+              <i class="fa-regular fa-file-pdf"></i>
+            </a>
+          </div>
         </div>
       </header>
+      <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are some of my <span class="red">projects</span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/blinker mockup.png"
+                  class="project__img"
+                  alt=""
+                />
+                <div class="project__wrapper--bg"></div>
+                <div class="project__description">
+                  <h3 class="project__description--title">
+                    Car Sales Projects
+                  </h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JavaScript
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Vero, corrupti reprehenderit totam vel rerum, culpa,
+                    blanditiis fugit mollitia alias debitis tempora hic
+                    consequatur tenetur voluptatem quia optio minima ab in
+                    distinctio veniam et! Odio, reprehenderit. Saepe, odio ut
+                    accusantium ducimus veniam sit reiciendis, molestias
+                    veritatis, quaerat optio ipsum nisi itaque.
+                  </p>
+                  <div class="project__description--links">
+                    <a href="#" class="project__description--link">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#" class="project__description--link">
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </section>
   </body>
 </html>
