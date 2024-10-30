@@ -38,12 +38,21 @@ input, textarea {
     border-left: none;
     border-right: none;
     height: 40px;
+    transition: all 300ms ease;
 }
 
 textarea {
     resize: vertical;
     height: 100px;
     margin-top: 8px;
+}
+
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+    border-color: #a71010;
 }
 
 label {
@@ -64,7 +73,8 @@ label {
 }
 
 .click {
-  transition: all 300ms ease;  
+    cursor: pointer;
+    transition: all 300ms ease;  
 }
 
 .click:hover {
@@ -235,6 +245,55 @@ MODAL
     border-color: #a71010;
     color: #a71010;
 }
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: -1;
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    font-size: 80px;
+}
+
+.modal__overlay--success {
+    background-color: #4bb543;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    padding: 28px;
+}
+
+.fa-spinner {
+    animation: spinner 750ms infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 36px;
+    z-index: 100;
+}
+
 
 /*
 
