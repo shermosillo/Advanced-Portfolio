@@ -45,14 +45,14 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contacts</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -65,11 +65,11 @@
         <div class="header__content">
           <h1 class="title">Hey</h1>
           <h1 class="title red">I'm Sam.</h1>
-          <p class="header__para"></p>
+          <p class="header__para">
             I'm a <b class="red">Frontend Software Engineer</b> with a strong
             passion for bulding web application with great user experiences.
             <br />
-            Here's a bit more <b class="red click">about me</b>.
+            Here's a bit more <b class="red click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a href=""></a>
@@ -93,7 +93,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -110,7 +110,7 @@
           <p class="modal__para">As a dedicated frontend developer with practical experience in <b class="red">HTML</b>, <b class="red">CSS</b>, and <b class="red">JavaScript</b>, I bring a unique blend of maturity, focus, and problem-solving skills honed over a diverse career. Currently enrolled in <b class="red">Frontend Simplified</b>, I am continually advancing my technical skills and staying updated with the latest trends. My commitment to quality and excellence ensures that I can deliver high-impact, user-friendly web applications.</b></p>
           <div class="modal__languages">
             <figure class="modal__language">
-              <img src="./assets/html-image.png" class="modal__language--img alt=">
+              <img src="./assets/HTML5_Badge.svg.png" class="modal__language--img alt=">
               <span class="language__name">HTML</span>
             </figure>
               <figure class="modal__language">
@@ -118,12 +118,13 @@
                 <span class="language__name">CSS</span>
             </figure>
             <figure class="modal__language">
-              <img src="./assets/javascript-image.png" class="modal__language--img alt=">
+              <img src="./assets/javascript_img.webp" class="modal__language--img alt=">
               <span class="language__name">JavaScript</span>
             </figure>
         </div>
         </div>
         <div class="modal__half modal__contact">
+          <i class="fa-solid fa-xmark modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
           </h3>
@@ -154,7 +155,6 @@
           Thanks for the message.  Looking forward to speaking to you soon!
          </div>
         </div>
-        <i class="fa-solid fa-xmark modal__exit click"></i>
       </div>
     </section>
 
